@@ -1,0 +1,12 @@
+{
+  "name": "eslint-config-tictail",
+  "description": "JavaScript Tictail Style - ESLint Shareable Config",
+  "version": "1.0.0",
+  "homepage": "https://github.com/tictail/eslint-config-tictail",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tictail/eslint-config-tictail.git"
+  }
+}
