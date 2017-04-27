@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tictail",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Eslint config used by Tictail",
   "main": "index.js",
   "repository": {
