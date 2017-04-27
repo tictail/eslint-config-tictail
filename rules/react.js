@@ -1,0 +1,48 @@
+module.exports = {
+  plugins: ['react'],
+  settings: {
+    react: {
+      version: '15.4',
+    },
+  },
+  rules: {
+    'react/jsx-no-target-blank': 1,
+    'react/display-name': [1, { ignoreTranspilerName: false }],
+    'react/jsx-no-duplicate-props': 1,
+    'react/jsx-no-literals': 1,
+    'react/jsx-no-undef': 1,
+    'react/jsx-pascal-case': 2,
+    'react/sort-prop-types': 1,
+    'react/jsx-uses-react': 2,
+    'react/jsx-uses-vars': 2,
+    'react/no-deprecated': 2,
+    'react/no-direct-mutation-state': 2,
+    'react/no-unknown-property': 2,
+    'react/prop-types': [1, { ignore: ['children', 'className'] }],
+    'react/require-render-return': 1,
+    'react/react-in-jsx-scope': 1,
+    'react/self-closing-comp': 1,
+    'react/sort-comp': [
+      1,
+      {
+        order: [
+          '/^displayName+$/',
+          '/^propTypes+$/',
+          '/^contextTypes+$/',
+          '/^queries+$/',
+          '/^requiredQueries+$/',
+          '/^keyPaths+$/',
+          '/^authed+$/',
+          '/^mounted+$/',
+          'lifecycle',
+          '/^on.+$/',
+          '/^handle.+$/',
+          '/^(get|set)(?!(InitialState$|DefaultProps$|ChildContext$)).+$/',
+          'everything-else',
+          '/^render.+$/',
+          'render',
+        ],
+      },
+    ],
+  },
+}

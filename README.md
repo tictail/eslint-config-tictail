@@ -1,6 +1,16 @@
-# eslint-config-tictail
+# Tictail eslint config
 
-#### TODO
+Usage:
 
-- [ ] Add build make-target
-- [ ] Add circle release make-target
+
+Install:
+```
+npm i eslint-config-tictail -D
+```
+
+Add the following to your .eslintrc:
+```
+{
+  extends: "tictail",
+}
+```

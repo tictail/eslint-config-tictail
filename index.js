@@ -1,1 +1,48 @@
-module.exports = require('./eslintrc.json')
+module.exports = {
+  parser: 'babel-eslint',
+  extends: [
+    './rules/base',
+    './rules/import',
+    './rules/jest',
+    './rules/jsx-a11y',
+    './rules/react',
+  ].map(require.resolve),
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2017,
+    sourceType: 'module',
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+    },
+  },
+  ecmaFeatures: {
+    arrowFunctions: true,
+    blockBindings: true,
+    classes: true,
+    defaultParams: true,
+    destructuring: true,
+    forOf: true,
+    generators: true,
+    modules: true,
+    objectLiteralComputedProperties: true,
+    objectLiteralDuplicateProperties: true,
+    objectLiteralShorthandMethods: true,
+    objectLiteralShorthandProperties: true,
+    restParams: true,
+    spread: true,
+    experimentalObjectRestSpread: true,
+    superInFunctions: true,
+    templateStrings: true,
+    jsx: true,
+  },
+  globals: {
+    System: true,
+    Promise: true,
+    document: true,
+    window: true,
+  },
+  rules: {},
+}
