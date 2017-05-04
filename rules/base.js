@@ -129,7 +129,7 @@ module.exports = {
     'prettier/prettier': [
       1,
       {
-        trailingComma: 'all',
+        trailingComma: 'es5',
         singleQuote: true,
         semi: false,
       },
