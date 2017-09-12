@@ -17,7 +17,7 @@ module.exports = {
     'max-params': [1, 5], // limits the number of parameters that can be used in the function declaration. (off by default)
     'new-cap': [2, { newIsCap: true, capIsNew: false }], // require a capital letter for constructors
     'new-parens': 1, // disallow the omission of parentheses when invoking a constructor with no arguments
-    'no-alert': 1, // disallow the use of alert, confirm, and prompt
+    'no-alert': 0, // disallow the use of alert, confirm, and prompt
     'no-await-in-loop': 1,
     'no-bitwise': 1, // disallow use of bitwise operators (off by default)
     'no-case-declarations': 2,
