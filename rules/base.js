@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     'accessor-pairs': 1,
     'block-scoped-var': 2,
-    camelcase: [1, { properties: 'never' }],
+    'camelcase': [1, { properties: 'never', ignoreDestructuring: true }],
     'capitalized-comments': 0,
     'consistent-this': [1, 'that'],
     'constructor-super': 2,
@@ -120,7 +120,7 @@ module.exports = {
     'quote-props': [1, 'as-needed'], // require quotes around object literal property names (off by default)
     radix: 1, // require use of the second argument for parseInt() (off by default)
     'require-yield': 2,
-    'space-before-function-paren': [1, 'never'],
+    'space-before-function-paren': [1, {"anonymous": "never", "named": "never", "asyncArrow": "always"}],
     'spaced-comment': [1, 'always'],
     strict: [2, 'global'], // controls location of Use Strict Directives
     'use-isnan': 2, // disallow comparisons with the value NaN
