@@ -27,7 +27,7 @@
     "eslint-plugin-react": "~6.10.3"
   },
   "devDependencies": {
-    "eslint": "~3.19.0",
+    "eslint": "~4.0.0",
     "prettier": "~1.2.2"
   }
 }
