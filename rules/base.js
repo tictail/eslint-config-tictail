@@ -120,7 +120,7 @@ module.exports = {
     'quote-props': [1, 'as-needed'], // require quotes around object literal property names (off by default)
     radix: 1, // require use of the second argument for parseInt() (off by default)
     'require-yield': 2,
-    'space-before-function-paren': [1, 'never'],
+    'space-before-function-paren': 0,
     'spaced-comment': [1, 'always'],
     strict: [2, 'global'], // controls location of Use Strict Directives
     'use-isnan': 2, // disallow comparisons with the value NaN
